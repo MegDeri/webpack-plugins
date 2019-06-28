@@ -1,5 +1,5 @@
 {
-  "name": "webpack20-5",
+  "name": "webpack20-6",
   "version": "1.0.0",
   "description": "webpack",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MegDeri/webpack20-5.git"
+    "url": "git+https://github.com/MegDeri/webpack-plugins.git"
   },
   "keywords": [
     "webpack"
@@ -18,9 +18,9 @@
   "author": "Magda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MegDeri/webpack20-5/issues"
+    "url": "https://github.com/MegDeri/webpack-plugins/issues"
   },
-  "homepage": "https://github.com/MegDeri/webpack20-5#readme",
+  "homepage": "https://github.com/MegDeri/webpack-plugins#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",

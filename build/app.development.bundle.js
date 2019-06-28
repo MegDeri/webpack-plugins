@@ -97,6 +97,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/components/TodoList.css":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/components/TodoList.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"._2wCYdG8Gdd57fZIYVx7wMf {\\r\\n    font-size: 20px;\\r\\n    color: rgb(24, 185, 64);\\r\\n    text-transform: capitalize;\\r\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"todoApp\": \"_2wCYdG8Gdd57fZIYVx7wMf\"\n};\n\n//# sourceURL=webpack:///./src/components/TodoList.css?./node_modules/css-loader/dist/cjs.js??ref--5-1");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./src/containers/App.css":
 /*!********************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-1!./src/containers/App.css ***!
@@ -280,6 +291,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./src/components/TodoList.css":
+/*!*************************************!*\
+  !*** ./src/components/TodoList.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-1!./TodoList.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/components/TodoList.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/TodoList.css?");
+
+/***/ }),
+
 /***/ "./src/components/TodoList.js":
 /*!************************************!*\
   !*** ./src/components/TodoList.js ***!
@@ -288,7 +310,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './Todo.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\nvar TodoApp = function TodoApp(props) {\n  var listElement = props.list.map(function (elem) {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", {\n      id: elem.id,\n      onCkick: function onCkick() {\n        return props.remove(elem.id);\n      }\n    }, elem.text);\n  });\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"ul\", {\n    className: !(function webpackMissingModule() { var e = new Error(\"Cannot find module './Todo.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).todoApp\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h4\", null, props.name), listElement);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (TodoApp);\n\n//# sourceURL=webpack:///./src/components/TodoList.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _TodoList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TodoList.css */ \"./src/components/TodoList.css\");\n/* harmony import */ var _TodoList_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_TodoList_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar TodoApp = function TodoApp(props) {\n  var listElement = props.list.map(function (elem) {\n    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"li\", {\n      id: elem.id,\n      onCkick: function onCkick() {\n        return props.remove(elem.id);\n      }\n    }, elem.text);\n  });\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"ul\", {\n    className: _TodoList_css__WEBPACK_IMPORTED_MODULE_1___default.a.todoApp\n  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h4\", null, props.name), listElement);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (TodoApp);\n\n//# sourceURL=webpack:///./src/components/TodoList.js?");
 
 /***/ }),
 
