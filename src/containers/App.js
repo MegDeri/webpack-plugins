@@ -41,8 +41,8 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                <Title title="Title in webpack" taskNumber={this.state.data.length}></Title>
-                <TodoApp name="This is list of id" list={this.state.data}></TodoApp>
+                <Title title="Title in webpack" taskNumber={this.state.data.length}/>
+                <TodoApp name="This is list of id" list={this.state.data} onClick={this.removeTodo.bind(this)}></TodoApp>
             </div>
         );
     }
