@@ -38,6 +38,7 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
+    "live-server": "^1.2.1",
     "uuid": "^3.3.2"
   }
 }
