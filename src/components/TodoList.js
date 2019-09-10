@@ -20,7 +20,7 @@ class TodoApp extends React.Component {
             )});
             return (
                 <ul className={style.todoApp}>
-                    <h4>{props.name}</h4>
+                    <h4>{this.props.name}</h4>
                     {listElement}     
                 </ul> 
             )
