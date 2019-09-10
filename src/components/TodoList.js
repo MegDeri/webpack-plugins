@@ -3,7 +3,7 @@ import style from './TodoList.css';
 
 const TodoApp = props => {
     
-    const listElement = props.list.map(elem => <li key={elem.id} onClick={elem => props.remove(elem.id) }>{elem.text}</li>)
+    const listElement = props.list.map(elem => <li key={elem.id} onClick={elem => props.removeTodo(elem.id) }>{elem.text}</li>)
     return (
         <ul className={style.todoApp}>
             <h4>{props.name}</h4>
