@@ -25,6 +25,7 @@ class App extends React.Component {
                 }
             ]
         };
+        this.removeTodo = this.removeTodo.bind(this);
     }
     addTodo(val){
         const todo = {
@@ -42,7 +43,7 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Title title="Title in webpack" taskNumber={this.state.data.length}/>
-                <TodoApp name="This is list of id" list={this.state.data} onClick={this.removeTodo.bind(this)}></TodoApp>
+                <TodoApp name="This is list of id" list={this.state.data} remove={this.removeTodo}></TodoApp>
             </div>
         );
     }
