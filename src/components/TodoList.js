@@ -1,24 +1,32 @@
 import React from 'react';
 import style from './TodoList.css';
 
-class Li extends React.Component {
-    render (){
-        return (<li onClick={this.props.onClick}>{this.props.text}</li>);
+class TodoApp extends React.Component {
+    constructor(props){
+        super(props);
+        this.removeClickLi = this.removeClickLi.bind(this);
     }
+
+    removeClickLi(clickLi) {
+        this.props.onClick(clickLi);
+    }
+
+    render () {
+        const listElement = this.props.list.map(elem => {
+            return(
+                <li key={elem.id} id={elem.id} onClick={() => this.removeClickLi(elem.id)}>
+                    {elem.text}
+                </li>
+            )});
+            return (
+                <ul className={style.todoApp}>
+                    <h4>{props.name}</h4>
+                    {listElement}     
+                </ul> 
+            )
+    }
+
 }
 
-
-const TodoApp = props => {
-    
-    const listElement = props.list.map(elem => <li key={elem.id} id={elem.id} remove={props.removeTodo}>{elem.text}</li>)
-    return (
-        <ul className={style.todoApp}>
-            <h4>{props.name}</h4>
-            
-           <Li onClick={this.removeTodo.bind(this)}> {listElement} </Li>    
-            
-        </ul> 
-    )
-}
 
 export default TodoApp;
