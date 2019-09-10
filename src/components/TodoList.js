@@ -3,7 +3,7 @@ import style from './TodoList.css';
 
 class Li extends React.Component {
     render (){
-        return (<li onClick={this.props.remove}>{this.props.text}</li>);
+        return (<li onClick={this.props.onClick}>{this.props.text}</li>);
     }
 }
 
@@ -15,7 +15,7 @@ const TodoApp = props => {
         <ul className={style.todoApp}>
             <h4>{props.name}</h4>
             
-           <Li> {listElement} </Li>    
+           <Li onClick={this.removeTodo.bind(this)}> {listElement} </Li>    
             
         </ul> 
     )
